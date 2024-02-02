@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="./src/styles/global.css">
+  <link rel="stylesheet" href="./src/styles/menu.css">
+
+  <!-- SCRIPTS -->
+  <script defer type="module" src="./src/scripts/index.js"></script>
+
+  <title>ZADANIE 1</title>
+</head>
+
+<body>
+  <header class="header">
+    <button id="open-navigation-button" class="navigation__open">
+      <img src="./src/icons/hamburger.svg" alt="Otwórz menu">
+    </button>
+    <nav id="navigation" class="navigation">
+      <button id="close-navigation-button" class="navigation__close">
+        <img src="./src/icons/cross-close.svg" alt="Zamknij menu">
+      </button>
+      <ul class="navigation__menu reset-ul">
+        <li class="navigation__menu-item">
+          <a class="navigation__menu-link arrow" href="#makijaz" title="Makijaż">
+            makijaż
+          </a>
+          <ul class="navigation__submenu reset-ul">
+            <li class="navigation__submenu-item">
+              <a class="navigation__submenu-link" href="#test" title="Test 1">
+                Test 1
+              </a>
+            </li>
+            <li class="navigation__submenu-item">
+              <a class="navigation__submenu-link" href="#test2" title="Test 2">
+                Test 2
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="navigation__menu-item">
+          <a class="navigation__menu-link arrow" href="#twarz" title="Twarz">
+            twarz
+          </a>
+          <ul class="navigation__submenu reset-ul">
+            <li class="navigation__submenu-item">
+              <a class="navigation__submenu-link" href="#kremy" title="Kremy">
+                Kremy
+              </a>
+              <ul class="navigation__submenu-list reset-ul">
+                <li class="navigation__submenu-list-item">
+                  <a class="navigation__submenu-list-link" href="#kremy-nawilzajace" title="Kremy nawilżające">
+                    Kremy nawilżające
+                  </a>
+                </li>
+                <li class="navigation__submenu-list-item">
+                  <a class="navigation__submenu-list-link" href="#kremy-odżywcze" title="Kremy odżywcze">
+                    Kremy odżywcze
+                  </a>
+                </li>
+                <li class="navigation__submenu-list-item">
+                  <a class="navigation__submenu-list-link" href="#kremy-na-przebarwienia"
+                    title="Kremy na przebarwienia">
+                    Kremy na przebarwienia
+                  </a>
+                </li>
+                <li class="navigation__submenu-list-item">
+                  <a class="navigation__submenu-list-link" href="#kremy-przeciwzmarszczkowe"
+                    title="Kremy przeciwzmarszczkowe">
+                    Kremy przeciwzmarszczkowe
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation__submenu-item">
+              <a class="navigation__submenu-link" href="#serum" title="Serum">
+                Serum
+              </a>
+              <ul class="navigation__submenu-list reset-ul">
+                <li class="navigation__submenu-list-item">
+                  <a class="navigation__submenu-list-link" href="#serum-nawilzajace" title="Serum nawilżające">
+                    Serum nawilżające
+                  </a>
+                </li>
+                <li class="navigation__submenu-list-item">
+                  <a class="navigation__submenu-list-link" href="#serum-odżywcze" title="Serum odżywcze">
+                    Serum odżywcze
+                  </a>
+                </li>
+                <li class="navigation__submenu-list-item">
+                  <a class="navigation__submenu-list-link" href="#serum-na-przebarwienia"
+                    title="Serum na przebarwienia">
+                    Serum na przebarwienia
+                  </a>
+                </li>
+                <li class="navigation__submenu-list-item">
+                  <a class="navigation__submenu-list-link" href="#serum-przeciwzmarszczkowe"
+                    title="Serum przeciwzmarszczkowe">
+                    Serum przeciwzmarszczkowe
+                  </a>
+                </li>
+                <li class="navigation__submenu-list-item">
+                  <a class="navigation__submenu-list-link" href="#serum-olejowe" title="Serum olejowe">
+                    Serum olejowe
+                  </a>
+                </li>
+                <li class="navigation__submenu-list-item">
+                  <a class="navigation__submenu-list-link" href="#serum-antyoksydacyjne" title="Serum antyoksydacyjne">
+                    Serum antyoksydacyjne
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation__submenu-item">
+              <a class="navigation__submenu-link" href="#oczyszczanie-twarzy" title="Oczyszczanie twarzy">
+                Oczyszczanie twarzy
+              </a>
+              <ul class="navigation__submenu-list reset-ul">
+                <li class="navigation__submenu-list-item">
+                  <a class="navigation__submenu-list-link" href="#zele" title="Żele do mycia twarzy">
+                    Żele do mycia twarzy
+                  </a>
+                </li>
+                <li class="navigation__submenu-list-item">
+                  <a class="navigation__submenu-list-link" href="#pianki" title="Pianki do mycia twarzy">
+                    Pianki do mycia twarzy
+                  </a>
+                </li>
+                <li class="navigation__submenu-list-item">
+                  <a class="navigation__submenu-list-link" href="#emulsje" title="Emulsje do mycia twarzy">
+                    Emulsje do mycia twarzy
+                  </a>
+                </li>
+                <li class="navigation__submenu-list-item">
+                  <a class="navigation__submenu-list-link" href="#mydla" title="Mydła do twarzy">
+                    Mydła do twarzy
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="navigation__menu-item">
+          <a class="navigation__menu-link" href="#cialo" title="Ciało">
+            ciało
+          </a>
+        </li>
+        <li class="navigation__menu-item">
+          <a class="navigation__menu-link" href="#wlosy" title="Włosy">
+            włosy
+          </a>
+        </li>
+        <li class="navigation__menu-item">
+          <a class="navigation__menu-link" href="#pielegnacja" title="Pielęgnacja">
+            pielęgnacja
+          </a>
+        </li>
+        <li class="navigation__menu-item">
+          <a class="navigation__menu-link" href="#dom" title="dom">
+            dom
+          </a>
+        </li>
+        <li class="navigation__cta">
+          <a class="navigation__cta-link" href="#promocje" title="Promocje">
+            PROMOCJE
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</body>
+
+</html>
