@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="./src/styles/global.css">
+  <link rel="stylesheet" href="./src/styles/search.css">
+
+  <!-- SCRIPTS -->
+  <script defer type="text/javascript" src="./src/scripts/search.js"></script>
+
+  <title>ZADANIE 2</title>
+</head>
+
+<body>
+  <div class="search">
+    <div class="search__input-wrapper">
+      <label for="search-input" class="search__input-label">Search</label>
+      <input id="search-input" type="text" class="search__input">
+      <div class="search__input-icons-wrapper">
+        <img id="loading-icon" src="./src/icons/loader.svg" alt="Loading icon" class="search__loading-icon">
+        <button id="search-clear" class="search__clear-button not-visible">
+          <img src="./src/icons/cross-close.svg" alt="Clear icon" class="search__clear-icon">
+        </button>
+        <button id="search-submit" class="search__submit-button">
+          <img src="./src/icons/loupe.svg" alt="Submit icon" class="search__submit-icon">
+        </button>
+      </div>
+    </div>
+    <ul id="results" class="search__results-list"></ul>
+  </div>
+</body>
+
+</html>

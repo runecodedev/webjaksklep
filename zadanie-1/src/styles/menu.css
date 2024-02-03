@@ -114,8 +114,6 @@
   pointer-events: all;
 }
 
-.navigation__submenu-item {}
-
 .navigation__submenu-link {
   font-family: "Inter", sans-serif;
   font-weight: 500;
