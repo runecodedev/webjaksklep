@@ -1,0 +1,128 @@
+.terminal {
+  background-color: #131212;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 726px;
+  /* min-height: 374px; */
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+
+.terminal__top-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #3E3E3E;
+  padding: 5px 10px;
+}
+
+.terminal__controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.terminal__control-item {
+  all: unset;
+  min-height: 10px;
+  max-height: 10px;
+  min-width: 10px;
+  max-width: 10px;
+  border-radius: 50%;
+}
+
+.terminal__control-item--red {
+  background-color: #E52A2A;
+}
+
+.terminal__control-item--yellow {
+  background-color: #E5BC2A;
+}
+
+.terminal__control-item--green {
+  background-color: #2AE53D;
+}
+
+.terminal__name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #C2C2C2;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.terminal__body {
+  padding: 0 20px;
+  margin: 20px 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  overflow-y: auto;
+}
+
+.terminal__body::-webkit-scrollbar {
+  background-color: #131212;
+}
+
+.terminal__body::-webkit-scrollbar-thumb {
+  background-color: #3E3E3E;
+}
+
+.terminal__item {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.terminal__input-wrapper {
+  width: 100%;
+  margin-top: auto;
+  padding: 0 20px 20px 20px;
+}
+
+.terminal__input {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 100%;
+  background-color: #3E3E3E;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 14px;
+}
+
+.terminal__input-hints {
+  margin-top: 12px;
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  min-height: 19px;
+}
+
+.terminal__input-hints:empty {
+  display: none;
+}
+
+.terminal__input-hints span {
+  word-break: break-word;
+}
+
+.terminal__input-hints-button {
+  all: unset;
+  padding: 2px 4px;
+  background-color: #3E3E3E;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}

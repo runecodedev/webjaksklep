@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="./src/styles/global.css">
+  <link rel="stylesheet" href="./src/styles/terminal.css">
+
+  <!-- SCRIPTS -->
+  <script defer type="text/javascript" src="./src/scripts/terminal.js"></script>
+
+  <title>ZADANIE 3</title>
+</head>
+
+<body>
+  <div class="terminal">
+    <div class="terminal__top-bar">
+      <div class="terminal__controls">
+        <button class="terminal__control-item terminal__control-item--red"></button>
+        <button class="terminal__control-item terminal__control-item--yellow"></button>
+        <button class="terminal__control-item terminal__control-item--green"></button>
+      </div>
+      <span class="terminal__name">
+        webjaksklep
+      </span>
+    </div>
+    <ul id="terminal" class="terminal__body"></ul>
+    <div class="terminal__input-wrapper">
+      <input type="text" id="terminal-input" class="terminal__input">
+      <div id="terminal-input-hints" class="terminal__input-hints"></div>
+    </div>
+  </div>
+</body>
+
+</html>
