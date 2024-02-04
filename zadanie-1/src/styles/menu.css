@@ -91,6 +91,24 @@
   transform: translateY(-50%) rotate(180deg);
 }
 
+.navigation__menu-link.arrow::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #F4F4F4;
+  transform: translate(-50%, 165%) rotate(45deg);
+  opacity: 0;
+  transition: opacity .3s ease-out;
+  pointer-events: none;
+}
+
+.navigation__menu-link.active.arrow::before {
+  opacity: 1;
+}
+
 .navigation__submenu {
   display: flex;
   position: absolute;
@@ -219,6 +237,10 @@
   .navigation__menu-link.arrow {
     padding: 12px 4px;
     border-bottom: 1px solid #333333;
+  }
+
+  .navigation__menu-link.arrow::before {
+    display: none;
   }
 
   .navigation__menu-link.arrow::after {
